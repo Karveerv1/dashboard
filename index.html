@@ -398,4 +398,14 @@ function renderSales(filterDate){
     }
   });
 }
+document.querySelectorAll('.tabBtn').forEach(btn=>{
+btn.addEventListener('click',function(){
+document.querySelectorAll('.tabBtn').forEach(b=>{b.classList.remove('active');});
+document.querySelectorAll('.tabPane').forEach(p=>{p.classList.remove('active');});
+this.classList.add('active');
+const tab=this.dataset.tab;
+const pane=document.getElementById('pane-'+tab);
+if(pane){pane.classList.add('active');}
+});
+});
 </script></body></html>

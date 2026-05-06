@@ -408,4 +408,22 @@ const pane=document.getElementById('pane-'+tab);
 if(pane){pane.classList.add('active');}
 });
 });
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelectorAll('.tabBtn').forEach(function(btn){
+btn.onclick=function(){
+document.querySelectorAll('.tabBtn').forEach(function(b){
+b.classList.remove('active');
+});
+document.querySelectorAll('.tabPane').forEach(function(p){
+p.classList.remove('active');
+});
+this.classList.add('active');
+var tab=this.getAttribute('data-tab');
+var pane=document.getElementById('pane-'+tab);
+if(pane){
+pane.classList.add('active');
+}
+};
+});
+});
 </script></body></html>

@@ -4,16 +4,17 @@
 <link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap' rel='stylesheet'>
 <script src='https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js'></script>
 <style>
-:root{--bg:#07090f;--bg2:#0b0f1a;--card:#0f1623;--card2:#131d2e;--border:#1a2540;--accent:#3b82f6;--indigo:#6366f1;--green:#10b981;--yellow:#f59e0b;--orange:#f97316;--red:#ef4444;--text:#e2e8f0;--muted:#64748b;--dim:#1e2d45;}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(var(--dim) 1px,transparent 1px),linear-gradient(90deg,var(--dim) 1px,transparent 1px);background-size:44px 44px;opacity:.18;pointer-events:none;z-index:0}.sidebar{position:fixed;left:0;top:0;bottom:0;width:220px;background:linear-gradient(180deg,#0b0f1a,#07090f);border-right:1px solid var(--border);z-index:100;display:flex;flex-direction:column}.logo{padding:22px 18px 18px;border-bottom:1px solid var(--border)}.logo-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--indigo));display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:10px;box-shadow:0 0 24px rgba(99,102,241,.35)}.logo-t{font-size:13px;font-weight:800;letter-spacing:.3px}.logo-s{font-size:10px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono'}.nav{flex:1;padding:14px 8px;display:flex;flex-direction:column;gap:2px;overflow-y:auto}.ns{font-size:9px;font-weight:700;color:var(--dim);letter-spacing:1.8px;padding:10px 10px 4px;text-transform:uppercase}.ni{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:7px;cursor:pointer;font-size:12.5px;font-weight:500;color:var(--muted);transition:all .18s;text-decoration:none}.ni:hover,.ni.on{background:rgba(59,130,246,.1);color:var(--accent);border:1px solid rgba(59,130,246,.18)}.ni .d{width:5px;height:5px;border-radius:50%;background:currentColor;flex-shrink:0}.sf{padding:14px;border-top:1px solid var(--border)}.up{display:flex;align-items:center;gap:9px;padding:9px;border-radius:8px;background:var(--card)}.ua{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff}.un{font-size:12px;font-weight:700}.ur{font-size:10px;color:var(--muted)}.main{margin-left:220px;min-height:100vh;position:relative;z-index:1}.topbar{position:sticky;top:0;z-index:50;background:rgba(7,9,15,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:13px 26px;display:flex;align-items:center;justify-content:space-between}.tb-l h1{font-size:17px;font-weight:800}.tb-l p{font-size:10px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono'}.tb-r{display:flex;align-items:center;gap:10px}.badge{padding:4px 11px;border-radius:20px;font-size:11px;font-weight:600;display:flex;align-items:center;gap:5px}.blv{background:rgba(16,185,129,.12);color:var(--green);border:1px solid rgba(16,185,129,.25)}.bdt{background:var(--card);color:var(--muted);border:1px solid var(--border);font-family:'JetBrains Mono';font-size:10px}.pls{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pls 2s infinite}@keyframes pls{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(16,185,129,0)}}.content{padding:22px 26px}.kgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-bottom:22px}.kcard{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:17px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;cursor:default}.kcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;background:var(--kb,var(--accent))}.kcard:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(0,0,0,.45)}.kl{font-size:9.5px;font-weight:700;color:var(--muted);letter-spacing:.9px;text-transform:uppercase;margin-bottom:8px}.kv{font-size:21px;font-weight:800;font-family:'JetBrains Mono';line-height:1}.ks{font-size:10px;color:var(--muted);margin-top:6px}.ki{position:absolute;right:14px;top:14px;font-size:19px;opacity:.35}.kc-g{--kb:var(--green)}.kc-b{--kb:var(--accent)}.kc-y{--kb:var(--yellow)}.kc-o{--kb:var(--orange)}.kc-r{--kb:var(--red)}@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}.kcard{animation:fu .5s ease both}.kcard:nth-child(1){animation-delay:.04s}.kcard:nth-child(2){animation-delay:.08s}.kcard:nth-child(3){animation-delay:.12s}.kcard:nth-child(4){animation-delay:.16s}.kcard:nth-child(5){animation-delay:.20s}.r2{display:grid;grid-template-columns:1.35fr 1fr;gap:15px;margin-bottom:15px}.menuBtn{width:34px;height:34px;border-radius:9px;background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.22);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;transition:all 0.3s ease;flex-shrink:0}.menuBtn:hover{background:rgba(59,130,246,0.22);box-shadow:0 0 14px rgba(59,130,246,0.3)}.menuBtn span{width:16px;height:2px;background:#93c5fd;border-radius:2px;transition:all 0.35s cubic-bezier(0.4,0,0.2,1);transform-origin:center}.menuBtn.active span:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}.menuBtn.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menuBtn.active span:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}.reopenBtn{position:fixed;left:12px;top:50%;transform:translateY(-50%);width:28px;height:72px;border-radius:0 10px 10px 0;background:linear-gradient(180deg,rgba(59,130,246,0.18),rgba(99,102,241,0.18));border:1px solid rgba(59,130,246,0.3);border-left:none;display:none;flex-direction:column;justify-content:center;align-items:center;gap:4px;cursor:pointer;z-index:999;transition:all 0.3s ease;box-shadow:4px 0 20px rgba(59,130,246,0.15)}.reopenBtn:hover{background:linear-gradient(180deg,rgba(59,130,246,0.32),rgba(99,102,241,0.32));box-shadow:4px 0 28px rgba(59,130,246,0.35);width:34px}.reopenBtn span{width:14px;height:2px;background:#93c5fd;border-radius:2px;transition:all 0.3s}.reopenBtn.show{display:flex}.reopenBtn .arrow{font-size:14px;color:#93c5fd;line-height:1}.logo{padding:18px 16px 16px;border-bottom:1px solid var(--border)}.logo-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.sidebar{transition:transform 0.4s cubic-bezier(0.4,0,0.2,1)}.sidebar.hide{transform:translateX(-100%)}.main{transition:margin-left 0.4s cubic-bezier(0.4,0,0.2,1)}.main.full{margin-left:0}.r2h{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:15px}.alert-full{width:100%;margin-bottom:15px}.panel{background:var(--card);border:1px solid var(--border);border-radius:13px;overflow:hidden;animation:fu .55s ease both;animation-delay:.28s}.ph{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}.pt{font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}.pb{font-size:10px;padding:3px 8px;border-radius:10px;font-family:'JetBrains Mono';background:var(--bg2);border:1px solid var(--border);color:var(--muted)}.pbd{padding:18px}.pbd0{padding:0}.tw{width:100%;overflow-x:hidden}table{width:100%;border-collapse:collapse;font-size:10.5px;table-layout:fixed}thead tr{border-bottom:1px solid var(--border)}thead th{padding:8px 6px;text-align:left;font-size:9px;font-weight:700;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;white-space:normal;word-break:break-word;line-height:1.3}tbody tr{border-bottom:1px solid rgba(26,37,64,.5);transition:background .14s}tbody tr:hover{background:var(--card2)}tbody td{padding:8px 6px;white-space:normal;word-break:break-word;line-height:1.3}.mono{font-family:'JetBrains Mono'}.chip{display:inline-flex;align-items:center;gap:3px;padding:2px 6px;border-radius:9px;font-size:9px;font-weight:700;font-family:'JetBrains Mono';white-space:nowrap}.rowCheck{appearance:none;-webkit-appearance:none;width:16px;height:16px;border:2px solid #334155;border-radius:4px;background:transparent;cursor:pointer;position:relative;transition:all 0.2s ease;vertical-align:middle}.rowCheck:checked{background:linear-gradient(135deg,#3b82f6,#6366f1);border-color:#3b82f6;box-shadow:0 0 8px rgba(59,130,246,0.5)}.rowCheck:checked::after{content:'';position:absolute;left:3px;top:0px;width:5px;height:9px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg)}.rowCheck:hover{border-color:#3b82f6;box-shadow:0 0 6px rgba(59,130,246,0.3)}tbody tr.row-selected{background:rgba(59,130,246,0.08)!important;border-left:2px solid #3b82f6}.cg{background:rgba(16,185,129,.1);color:var(--green);border:1px solid rgba(16,185,129,.2)}.cy{background:rgba(245,158,11,.1);color:var(--yellow);border:1px solid rgba(245,158,11,.2)}.co{background:rgba(249,115,22,.1);color:var(--orange);border:1px solid rgba(249,115,22,.2)}.cr{background:rgba(239,68,68,.1);color:var(--red);border:1px solid rgba(239,68,68,.2)}.cb{background:rgba(59,130,246,.1);color:var(--accent);border:1px solid rgba(59,130,246,.2)}.arow{display:flex;align-items:center;gap:9px;margin-bottom:9px}.albl{font-size:10px;color:var(--muted);width:82px;flex-shrink:0;font-family:'JetBrains Mono'}.abw{flex:1;background:var(--bg2);border-radius:4px;height:7px;overflow:hidden}.ab{height:7px;border-radius:4px;width:0;transition:width 1.3s cubic-bezier(.4,0,.2,1)}.aamt{font-size:10.5px;font-family:'JetBrains Mono';font-weight:700;width:85px;text-align:right}.abox{border-radius:9px;padding:10px 14px;display:flex;align-items:center;gap:10px;margin-bottom:7px}.acrit{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.18)}.awarn{background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.18)}.aico{font-size:18px}.av{font-size:11.5px;font-weight:700}.ad{font-size:9.5px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono'}.ady{font-size:14px;font-weight:800;font-family:'JetBrains Mono'}.ady.c{color:var(--red)}.ady.w{color:var(--orange)}.tr-r{background:rgba(239,68,68,.04)!important}.tr-o{background:rgba(249,115,22,.04)!important}.pos{color:var(--green)}.neg{color:var(--red)}.erow{display:flex;align-items:center;justify-content:space-between;padding:8px 11px;border-radius:7px;background:var(--bg2);margin-bottom:6px}.ename{font-size:11.5px;font-weight:600}.eamt{font-size:11.5px;font-family:'JetBrains Mono';color:var(--orange)}canvas{max-height:220px}::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--dim);border-radius:3px}#alertTbl th:nth-child(1),#alertTbl td:nth-child(1){width:4%}#alertTbl th:nth-child(2),#alertTbl td:nth-child(2){width:18%}#alertTbl th:nth-child(3),#alertTbl td:nth-child(3){width:10%}#alertTbl th:nth-child(4),#alertTbl td:nth-child(4){width:5%}#alertTbl th:nth-child(5),#alertTbl td:nth-child(5){width:10%}#alertTbl th:nth-child(6),#alertTbl td:nth-child(6){width:8%}#alertTbl th:nth-child(7),#alertTbl td:nth-child(7){width:14%}#alertTbl th:nth-child(8),#alertTbl td:nth-child(8){width:8%}#alertTbl th:nth-child(9),#alertTbl td:nth-child(9){width:8%}#alertTbl th:nth-child(10),#alertTbl td:nth-child(10){width:15%}#flowTbl th:nth-child(1),#flowTbl td:nth-child(1){width:9%}#flowTbl th:nth-child(2),#flowTbl td:nth-child(2){width:9%}#flowTbl th:nth-child(3),#flowTbl td:nth-child(3){width:9%}#flowTbl th:nth-child(4),#flowTbl td:nth-child(4){width:11%}#flowTbl th:nth-child(5),#flowTbl td:nth-child(5){width:9%}#flowTbl th:nth-child(6),#flowTbl td:nth-child(6){width:9%}#flowTbl th:nth-child(7),#flowTbl td:nth-child(7){width:10%}#flowTbl th:nth-child(8),#flowTbl td:nth-child(8){width:11%}#flowTbl th:nth-child(9),#flowTbl td:nth-child(9){width:10%}#flowTbl th:nth-child(10),#flowTbl td:nth-child(10){width:13%}#vendTbl th:nth-child(1),#vendTbl td:nth-child(1){width:5%}#vendTbl th:nth-child(2),#vendTbl td:nth-child(2){width:30%}#vendTbl th:nth-child(3),#vendTbl td:nth-child(3){width:8%}#vendTbl th:nth-child(4),#vendTbl td:nth-child(4){width:18%}#vendTbl th:nth-child(5),#vendTbl td:nth-child(5){width:10%}#vendTbl th:nth-child(6),#vendTbl td:nth-child(6){width:15%}#vendTbl th:nth-child(7),#vendTbl td:nth-child(7){width:14%}</style></head><body>
-<button id='reopenBtn' class='reopenBtn'><div class='arrow'>&#x276F;</div><span></span><span></span><span></span></button><nav class='sidebar'><div class='logo'><div class='logo-top'><div class='logo-mark'>&#x1F4B9;</div><button id='toggleBtn' class='menuBtn'><span></span><span></span><span></span></button></div><div class='logo-t'>Karveer Cash ERP</div><div class='logo-s'>Live Excel Dashboard</div></div><div class='nav'><div class='ns'>Overview</div><a href='#kpi' class='ni on'><div class='d'></div>KPI Summary</a><a href='#flow' class='ni'><div class='d'></div>Cash Flow</a><div class='ns'>Vendors</div><a href='#alert' class='ni'><div class='d'></div>Alert System</a><a href='#overdue' class='ni'><div class='d'></div>Overdue</a><a href='#aging' class='ni'><div class='d'></div>Aging Analysis</a><div class='ns'>Operations</div><a href='#branch' class='ni'><div class='d'></div>Branch Performance</a><a href='#exp' class='ni'><div class='d'></div>Expenses</a><a href='#vtable' class='ni'><div class='d'></div>Vendor Table</a></div><div class='sf'><div class='up'><div class='ua'>VN</div><div><div class='un'>Accounts Head</div><div class='ur'>Finance Team</div></div></div></div></nav><div class='main'><div class='topbar'><div class='tb-l'><h1>&#x1F4CA; Karveer Cash Flow Dashboard</h1><p id='genTime'>Generated from Excel</p></div><div class='tb-r'><span class='badge blv'><div class='pls'></div>Live</span><span class='badge bdt' id='dt'></span></div></div><div class='content'><div id='kpi' class='kgrid'><div class='kcard kc-g'><div class='ki'>&#x1F4B0;</div><div class='kl'>MTD Total Sales</div><div class='kv' id='k0' style='color:var(--green)'></div><div class='ks'>Month-to-Date</div></div><div class='kcard kc-b'><div class='ki'>&#x1F3E6;</div><div class='kl'>Net Bank Balance</div><div class='kv' id='k1' style='color:var(--accent)'></div><div class='ks'>All Banks</div></div><div class='kcard kc-y'><div class='ki'>&#x1F4CB;</div><div class='kl'>Total Outstanding</div><div class='kv' id='k2' style='color:var(--yellow)'></div><div class='ks' id='k2s'></div></div><div class='kcard kc-o'><div class='ki'>&#x1F4B8;</div><div class='kl'>Expenses MTD</div><div class='kv' id='k3' style='color:var(--orange)'></div><div class='ks'>This Month</div></div><div class='kcard kc-r'><div class='ki'>&#x26A0;&#xFE0F;</div><div class='kl'>Today Cash Collected</div><div class='kv' id='k4' style='color:var(--red)'></div><div class='ks'>Today</div></div></div><div id='flow' class='r2'><div class='panel'><div class='ph'><div class='pt'>&#x1F4C8; Daily Cash Flow</div><span class='pb' id='cfBadge'></span></div><div class='pbd'><canvas id='cfChart'></canvas></div></div><div id='aging' class='panel'><div class='ph'><div class='pt'>&#x23F3; Vendor Aging</div><span class='pb' id='agBadge'></span></div><div class='pbd'><canvas id='agDonut' style='max-height:155px;margin-bottom:14px;'></canvas><div id='agBars'></div></div></div></div><div id='alert' class='panel alert-full'><div class='ph'><div class='pt'>&#x1F6A8; Vendor Alert System</div><div id='selectedTotal' style='display:flex;align-items:center;gap:8px;padding:6px 14px;border-radius:20px;background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.15);font-size:11.5px;font-weight:700;color:#64748b;font-family:JetBrains Mono,monospace;transition:all 0.3s ease'>Selected Total: 0</div><span class='pb' id='alertBadge'></span></div><div class='pbd0'><div class='tw'><table id='alertTbl'><thead><tr><th>Sel</th><th>Vendor</th><th>Total</th><th>Bills</th><th>Payable</th><th>Max Days</th><th>Bucket</th><th>Credit Days</th><th>Days Left</th><th>Alert</th></tr></thead><tbody></tbody></table></div></div></div><div id='overdue' class='panel' style='margin-bottom:15px'><div class='ph'><div class='pt'>&#x1F534; Overdue Vendors</div><span class='pb' style='color:var(--red)' id='ovBadge'></span></div><div class='pbd' id='ovList' style='display:block;width:100%'></div></div><div id='vendorDetail' style='margin-top:10px;padding:12px;border:1px solid #333;border-radius:8px;color:#fff;font-size:12px;'></div><div class='r2h'><div id='branch' class='panel'><div class='ph'><div class='pt'>&#x1F3EA; Branch Performance (MTD)</div><span class='pb' id='brBadge'></span></div><div class='pbd'><canvas id='brChart' style='max-height:195px'></canvas></div></div><div id='exp' class='panel'><div class='ph'><div class='pt'>&#x1F4B8; Expense Breakdown</div><span class='pb' id='expBadge'></span></div><div class='pbd'><canvas id='expChart' style='max-height:150px;margin-bottom:14px'></canvas><div id='expList'></div></div></div></div><div class='panel' style='margin-bottom:16px'><div class='ph'><div class='pt'>&#x1F5D3; Daily Cash Flow Detail</div><span class='pb'>With Running Balance</span></div><div class='pbd0 tw'><table id='flowTbl'><thead><tr><th>Date</th><th>Cash</th><th>Bank</th><th>Total Inflow</th><th>Cash Exp</th><th>Bank Exp</th><th>Vendor Pay</th><th>Total Outflow</th><th>Net Cash</th><th>Running Bal</th></tr></thead><tbody></tbody></table></div></div><div id='vtable' class='panel' style='margin-bottom:20px'><div class='ph'><div class='pt'>&#x1F3ED; Vendor Outstanding Summary</div><span class='pb' id='vtBadge'></span></div><div class='pbd0 tw'><table id='vendTbl'><thead><tr><th>#</th><th>Vendor Name</th><th>Bills</th><th>Total Amount</th><th>Max Days</th><th>Aging Bucket</th><th>Risk</th></tr></thead><tbody></tbody></table></div></div></div></div><script>
-const KPI={totalSalesDay:0,totalExpMTD:0,netBankBal:17008,mtdCashSales:0,cashDeposited:0,mtdTotalSales:0,todayCashColl:0,todayUPICard:0,totalOutstanding:45100408.72};
-const AGING={d0_30:12484564,d31_60:19947654,d61_90:12795787,d90p:-127596.28};
+:root{--bg:#07090f;--bg2:#0b0f1a;--card:#0f1623;--card2:#131d2e;--border:#1a2540;--accent:#3b82f6;--indigo:#6366f1;--green:#10b981;--yellow:#f59e0b;--orange:#f97316;--red:#ef4444;--text:#e2e8f0;--muted:#64748b;--dim:#1e2d45;}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(var(--dim) 1px,transparent 1px),linear-gradient(90deg,var(--dim) 1px,transparent 1px);background-size:44px 44px;opacity:.18;pointer-events:none;z-index:0}.sidebar{position:fixed;left:0;top:0;bottom:0;width:220px;background:linear-gradient(180deg,#0b0f1a,#07090f);border-right:1px solid var(--border);z-index:100;display:flex;flex-direction:column}.logo{padding:18px 16px 16px;border-bottom:1px solid var(--border)}.logo-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.logo-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--indigo));display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 0 24px rgba(99,102,241,.35)}.logo-t{font-size:13px;font-weight:800;letter-spacing:.3px}.logo-s{font-size:10px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono'}.nav{flex:1;padding:14px 8px;display:flex;flex-direction:column;gap:2px;overflow-y:auto}.ns{font-size:9px;font-weight:700;color:var(--dim);letter-spacing:1.8px;padding:10px 10px 4px;text-transform:uppercase}.ni{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:7px;cursor:pointer;font-size:12.5px;font-weight:500;color:var(--muted);transition:all .18s;text-decoration:none}.ni:hover,.ni.on{background:rgba(59,130,246,.1);color:var(--accent);border:1px solid rgba(59,130,246,.18)}.ni .d{width:5px;height:5px;border-radius:50%;background:currentColor;flex-shrink:0}.sf{padding:14px;border-top:1px solid var(--border)}.up{display:flex;align-items:center;gap:9px;padding:9px;border-radius:8px;background:var(--card)}.ua{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#f59e0b,#ef4444);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff}.un{font-size:12px;font-weight:700}.ur{font-size:10px;color:var(--muted)}.main{margin-left:220px;min-height:100vh;position:relative;z-index:1}.topbar{position:sticky;top:0;z-index:50;background:rgba(7,9,15,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:13px 26px;display:flex;align-items:center;justify-content:space-between}.tb-l h1{font-size:17px;font-weight:800}.tb-l p{font-size:10px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono'}.tb-r{display:flex;align-items:center;gap:10px}.badge{padding:4px 11px;border-radius:20px;font-size:11px;font-weight:600;display:flex;align-items:center;gap:5px}.blv{background:rgba(16,185,129,.12);color:var(--green);border:1px solid rgba(16,185,129,.25)}.bdt{background:var(--card);color:var(--muted);border:1px solid var(--border);font-family:'JetBrains Mono';font-size:10px}.pls{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pls 2s infinite}@keyframes pls{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 5px rgba(16,185,129,0)}}.tabBar{display:flex;gap:0;border-bottom:2px solid var(--border);padding:0 26px;background:rgba(7,9,15,0.75);position:sticky;top:57px;z-index:40;backdrop-filter:blur(10px)}.tabBtn{padding:11px 22px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;border:none;background:transparent;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all 0.22s;letter-spacing:.3px;display:flex;align-items:center;gap:7px;white-space:nowrap}.tabBtn:hover{color:var(--text);background:rgba(255,255,255,0.03)}.tabBtn.active{color:var(--accent);border-bottom-color:var(--accent);background:rgba(59,130,246,0.06)}.tabPane{display:none}.tabPane.active{display:block}.content{padding:22px 26px}.kgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-bottom:22px}.kcard{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:17px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;cursor:default}.kcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;background:var(--kb,var(--accent))}.kcard:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(0,0,0,.45)}.kl{font-size:9.5px;font-weight:700;color:var(--muted);letter-spacing:.9px;text-transform:uppercase;margin-bottom:8px}.kv{font-size:21px;font-weight:800;font-family:'JetBrains Mono';line-height:1}.ks{font-size:10px;color:var(--muted);margin-top:6px}.ki{position:absolute;right:14px;top:14px;font-size:19px;opacity:.35}.kc-g{--kb:var(--green)}.kc-b{--kb:var(--accent)}.kc-y{--kb:var(--yellow)}.kc-o{--kb:var(--orange)}.kc-r{--kb:var(--red)}@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}.kcard{animation:fu .5s ease both}.kcard:nth-child(1){animation-delay:.04s}.kcard:nth-child(2){animation-delay:.08s}.kcard:nth-child(3){animation-delay:.12s}.kcard:nth-child(4){animation-delay:.16s}.kcard:nth-child(5){animation-delay:.20s}.r2{display:grid;grid-template-columns:1.35fr 1fr;gap:15px;margin-bottom:15px}.r2h{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:15px}.menuBtn{width:34px;height:34px;border-radius:9px;background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.22);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;transition:all 0.3s ease;flex-shrink:0}.menuBtn:hover{background:rgba(59,130,246,0.22);box-shadow:0 0 14px rgba(59,130,246,0.3)}.menuBtn span{width:16px;height:2px;background:#93c5fd;border-radius:2px;transition:all 0.35s cubic-bezier(0.4,0,0.2,1);transform-origin:center}.menuBtn.active span:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}.menuBtn.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menuBtn.active span:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}.reopenBtn{position:fixed;left:12px;top:50%;transform:translateY(-50%);width:28px;height:72px;border-radius:0 10px 10px 0;background:linear-gradient(180deg,rgba(59,130,246,0.18),rgba(99,102,241,0.18));border:1px solid rgba(59,130,246,0.3);border-left:none;display:none;flex-direction:column;justify-content:center;align-items:center;gap:4px;cursor:pointer;z-index:999;transition:all 0.3s ease;box-shadow:4px 0 20px rgba(59,130,246,0.15)}.reopenBtn:hover{background:linear-gradient(180deg,rgba(59,130,246,0.32),rgba(99,102,241,0.32));box-shadow:4px 0 28px rgba(59,130,246,0.35);width:34px}.reopenBtn span{width:14px;height:2px;background:#93c5fd;border-radius:2px;transition:all 0.3s}.reopenBtn.show{display:flex}.reopenBtn .arrow{font-size:14px;color:#93c5fd;line-height:1}.sidebar{transition:transform 0.4s cubic-bezier(0.4,0,0.2,1)}.sidebar.hide{transform:translateX(-100%)}.main{transition:margin-left 0.4s cubic-bezier(0.4,0,0.2,1)}.main.full{margin-left:0}.alert-full{width:100%;margin-bottom:15px}.panel{background:var(--card);border:1px solid var(--border);border-radius:13px;overflow:hidden;animation:fu .55s ease both;animation-delay:.28s}.ph{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}.pt{font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}.pb{font-size:10px;padding:3px 8px;border-radius:10px;font-family:'JetBrains Mono';background:var(--bg2);border:1px solid var(--border);color:var(--muted)}.pbd{padding:18px}.pbd0{padding:0}.tw{width:100%;overflow-x:hidden}table{width:100%;border-collapse:collapse;font-size:10.5px;table-layout:fixed}thead tr{border-bottom:1px solid var(--border)}thead th{padding:8px 6px;text-align:left;font-size:9px;font-weight:700;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;white-space:normal;word-break:break-word;line-height:1.3}tbody tr{border-bottom:1px solid rgba(26,37,64,.5);transition:background .14s}tbody tr:hover{background:var(--card2)}tbody td{padding:8px 6px;white-space:normal;word-break:break-word;line-height:1.3}.mono{font-family:'JetBrains Mono'}.chip{display:inline-flex;align-items:center;gap:3px;padding:2px 6px;border-radius:9px;font-size:9px;font-weight:700;font-family:'JetBrains Mono';white-space:nowrap}.rowCheck{appearance:none;-webkit-appearance:none;width:16px;height:16px;border:2px solid #334155;border-radius:4px;background:transparent;cursor:pointer;position:relative;transition:all 0.2s ease;vertical-align:middle}.rowCheck:checked{background:linear-gradient(135deg,#3b82f6,#6366f1);border-color:#3b82f6;box-shadow:0 0 8px rgba(59,130,246,0.5)}.rowCheck:checked::after{content:'';position:absolute;left:3px;top:0px;width:5px;height:9px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg)}.rowCheck:hover{border-color:#3b82f6;box-shadow:0 0 6px rgba(59,130,246,0.3)}tbody tr.row-selected{background:rgba(59,130,246,0.08)!important;border-left:2px solid #3b82f6}.cg{background:rgba(16,185,129,.1);color:var(--green);border:1px solid rgba(16,185,129,.2)}.cy{background:rgba(245,158,11,.1);color:var(--yellow);border:1px solid rgba(245,158,11,.2)}.co{background:rgba(249,115,22,.1);color:var(--orange);border:1px solid rgba(249,115,22,.2)}.cr{background:rgba(239,68,68,.1);color:var(--red);border:1px solid rgba(239,68,68,.2)}.cb{background:rgba(59,130,246,.1);color:var(--accent);border:1px solid rgba(59,130,246,.2)}.arow{display:flex;align-items:center;gap:9px;margin-bottom:9px}.albl{font-size:10px;color:var(--muted);width:82px;flex-shrink:0;font-family:'JetBrains Mono'}.abw{flex:1;background:var(--bg2);border-radius:4px;height:7px;overflow:hidden}.ab{height:7px;border-radius:4px;width:0;transition:width 1.3s cubic-bezier(.4,0,.2,1)}.aamt{font-size:10.5px;font-family:'JetBrains Mono';font-weight:700;width:85px;text-align:right}.abox{border-radius:9px;padding:10px 14px;display:flex;align-items:center;gap:10px;margin-bottom:7px;cursor:pointer}.acrit{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.18)}.awarn{background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.18)}.aico{font-size:18px}.av{font-size:11.5px;font-weight:700}.ad{font-size:9.5px;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono'}.ady{font-size:14px;font-weight:800;font-family:'JetBrains Mono'}.ady.c{color:var(--red)}.ady.w{color:var(--orange)}.tr-r{background:rgba(239,68,68,.04)!important}.tr-o{background:rgba(249,115,22,.04)!important}.pos{color:var(--green)}.neg{color:var(--red)}.erow{display:flex;align-items:center;justify-content:space-between;padding:8px 11px;border-radius:7px;background:var(--bg2);margin-bottom:6px}.ename{font-size:11.5px;font-weight:600}.eamt{font-size:11.5px;font-family:'JetBrains Mono';color:var(--orange)}canvas{max-height:220px}::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--dim);border-radius:3px}#alertTbl th:nth-child(1),#alertTbl td:nth-child(1){width:4%}#alertTbl th:nth-child(2),#alertTbl td:nth-child(2){width:18%}#alertTbl th:nth-child(3),#alertTbl td:nth-child(3){width:10%}#alertTbl th:nth-child(4),#alertTbl td:nth-child(4){width:5%}#alertTbl th:nth-child(5),#alertTbl td:nth-child(5){width:10%}#alertTbl th:nth-child(6),#alertTbl td:nth-child(6){width:8%}#alertTbl th:nth-child(7),#alertTbl td:nth-child(7){width:14%}#alertTbl th:nth-child(8),#alertTbl td:nth-child(8){width:8%}#alertTbl th:nth-child(9),#alertTbl td:nth-child(9){width:8%}#alertTbl th:nth-child(10),#alertTbl td:nth-child(10){width:15%}#flowTbl th:nth-child(1),#flowTbl td:nth-child(1){width:9%}#flowTbl th:nth-child(2),#flowTbl td:nth-child(2){width:9%}#flowTbl th:nth-child(3),#flowTbl td:nth-child(3){width:9%}#flowTbl th:nth-child(4),#flowTbl td:nth-child(4){width:11%}#flowTbl th:nth-child(5),#flowTbl td:nth-child(5){width:9%}#flowTbl th:nth-child(6),#flowTbl td:nth-child(6){width:9%}#flowTbl th:nth-child(7),#flowTbl td:nth-child(7){width:10%}#flowTbl th:nth-child(8),#flowTbl td:nth-child(8){width:11%}#flowTbl th:nth-child(9),#flowTbl td:nth-child(9){width:10%}#flowTbl th:nth-child(10),#flowTbl td:nth-child(10){width:13%}#vendTbl th:nth-child(1),#vendTbl td:nth-child(1){width:5%}#vendTbl th:nth-child(2),#vendTbl td:nth-child(2){width:30%}#vendTbl th:nth-child(3),#vendTbl td:nth-child(3){width:8%}#vendTbl th:nth-child(4),#vendTbl td:nth-child(4){width:18%}#vendTbl th:nth-child(5),#vendTbl td:nth-child(5){width:10%}#vendTbl th:nth-child(6),#vendTbl td:nth-child(6){width:15%}#vendTbl th:nth-child(7),#vendTbl td:nth-child(7){width:14%}#salesTbl th:nth-child(1),#salesTbl td:nth-child(1){width:10%}#salesTbl th:nth-child(2),#salesTbl td:nth-child(2){width:14%}#salesTbl th:nth-child(3),#salesTbl td:nth-child(3){width:10%}#salesTbl th:nth-child(4),#salesTbl td:nth-child(4){width:10%}#salesTbl th:nth-child(5),#salesTbl td:nth-child(5){width:10%}#salesTbl th:nth-child(6),#salesTbl td:nth-child(6){width:10%}#salesTbl th:nth-child(7),#salesTbl td:nth-child(7){width:8%}#salesTbl th:nth-child(8),#salesTbl td:nth-child(8){width:7%}#salesTbl th:nth-child(9),#salesTbl td:nth-child(9){width:7%}#salesTbl th:nth-child(10),#salesTbl td:nth-child(10){width:7%}#salesTbl th:nth-child(11),#salesTbl td:nth-child(11){width:7%}.sdateBar{display:flex;align-items:center;gap:8px;margin-bottom:18px;flex-wrap:wrap;padding:14px 0 6px}.sdateLbl{font-size:11px;font-weight:700;color:var(--muted);margin-right:4px}.sdateBtn{padding:5px 14px;border-radius:20px;font-size:11px;font-weight:700;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;transition:all 0.2s;font-family:'JetBrains Mono'}.sdateBtn:hover{background:rgba(59,130,246,0.1);border-color:rgba(59,130,246,0.4);color:var(--accent)}.sdateBtn.on{background:rgba(59,130,246,0.15);border-color:var(--accent);color:var(--accent);box-shadow:0 0 10px rgba(59,130,246,0.2)}.sSummary{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:20px}.sCard{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:18px;text-align:center;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}.sCard:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,0.4)}.sCard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--sc,var(--accent))}.sCard-cash{--sc:#10b981}.sCard-card{--sc:#6366f1}.sCard-upi{--sc:#3b82f6}.sCard-total{--sc:#f59e0b}.sCard-ico{font-size:24px;margin-bottom:8px}.sCard-lbl{font-size:9px;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}.sCard-val{font-size:22px;font-weight:800;font-family:'JetBrains Mono';line-height:1}.sCard-pct{font-size:10px;color:var(--muted);margin-top:5px;font-family:'JetBrains Mono'}.sBranchGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}.sBrCard{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:14px 16px;transition:border-color .2s}.sBrCard:hover{border-color:rgba(59,130,246,0.35)}.sBrName{font-size:10px;font-weight:800;color:var(--muted);letter-spacing:.8px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}.sBrTotal{font-size:15px;font-weight:800;font-family:'JetBrains Mono';color:var(--accent)}.sBrRow{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid rgba(26,37,64,0.6);font-size:10.5px}.sBrRow:last-child{border:none;padding-bottom:0}.sBrRowLbl{color:var(--muted);font-weight:600}.sBrRowVal{font-family:'JetBrains Mono';font-weight:700}.sBrRowPct{font-size:9px;color:var(--muted);font-family:'JetBrains Mono';margin-left:4px}.sBrPbar{height:3px;border-radius:2px;margin-top:8px;background:var(--bg2);overflow:hidden}.sBrPbarFill{height:3px;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--indigo));width:0;transition:width 1s ease}.sNoData{text-align:center;padding:50px;color:var(--muted);font-size:13px}.sTotRow{background:rgba(59,130,246,0.06);border-top:2px solid rgba(59,130,246,0.3)!important;font-weight:800}</style></head><body>
+<button id='reopenBtn' class='reopenBtn'><div class='arrow'>&#x276F;</div><span></span><span></span><span></span></button><nav class='sidebar'><div class='logo'><div class='logo-top'><div class='logo-mark'>&#x1F4B9;</div><button id='toggleBtn' class='menuBtn'><span></span><span></span><span></span></button></div><div class='logo-t'>Karveer Cash ERP</div><div class='logo-s'>Live Excel Dashboard</div></div><div class='nav'><div class='ns'>Overview</div><a href='#kpi' class='ni on'><div class='d'></div>KPI Summary</a><a href='#flow' class='ni'><div class='d'></div>Cash Flow</a><div class='ns'>Vendors</div><a href='#alert' class='ni'><div class='d'></div>Alert System</a><a href='#overdue' class='ni'><div class='d'></div>Overdue</a><a href='#aging' class='ni'><div class='d'></div>Aging Analysis</a><div class='ns'>Operations</div><a href='#branch' class='ni'><div class='d'></div>Branch Performance</a><a href='#exp' class='ni'><div class='d'></div>Expenses</a><a href='#vtable' class='ni'><div class='d'></div>Vendor Table</a></div><div class='sf'><div class='up'><div class='ua'>VN</div><div><div class='un'>Accounts Head</div><div class='ur'>Finance Team</div></div></div></div></nav><div class='main'><div class='topbar'><div class='tb-l'><h1>&#x1F4CA; Karveer Cash Flow Dashboard</h1><p id='genTime'>Generated from Excel</p></div><div class='tb-r'><span class='badge blv'><div class='pls'></div>Live</span><span class='badge bdt' id='dt'></span></div></div><div class='tabBar'><button class='tabBtn active' data-tab='main'>&#x1F4CA; Dashboard</button><button class='tabBtn' data-tab='sales'>&#x1F9FE; Sales Entry</button></div><div id='pane-main' class='tabPane active'><div class='content'><div id='kpi' class='kgrid'><div class='kcard kc-g'><div class='ki'>&#x1F4B0;</div><div class='kl'>MTD Total Sales</div><div class='kv' id='k0' style='color:var(--green)'></div><div class='ks'>Month-to-Date</div></div><div class='kcard kc-b'><div class='ki'>&#x1F3E6;</div><div class='kl'>Net Bank Balance</div><div class='kv' id='k1' style='color:var(--accent)'></div><div class='ks'>All Banks</div></div><div class='kcard kc-y'><div class='ki'>&#x1F4CB;</div><div class='kl'>Total Outstanding</div><div class='kv' id='k2' style='color:var(--yellow)'></div><div class='ks' id='k2s'></div></div><div class='kcard kc-o'><div class='ki'>&#x1F4B8;</div><div class='kl'>Expenses MTD</div><div class='kv' id='k3' style='color:var(--orange)'></div><div class='ks'>This Month</div></div><div class='kcard kc-r'><div class='ki'>&#x26A0;&#xFE0F;</div><div class='kl'>Today Cash Collected</div><div class='kv' id='k4' style='color:var(--red)'></div><div class='ks'>Today</div></div></div><div id='flow' class='r2'><div class='panel'><div class='ph'><div class='pt'>&#x1F4C8; Daily Cash Flow</div><span class='pb' id='cfBadge'></span></div><div class='pbd'><canvas id='cfChart'></canvas></div></div><div id='aging' class='panel'><div class='ph'><div class='pt'>&#x23F3; Vendor Aging</div><span class='pb' id='agBadge'></span></div><div class='pbd'><canvas id='agDonut' style='max-height:155px;margin-bottom:14px;'></canvas><div id='agBars'></div></div></div></div><div id='alert' class='panel alert-full'><div class='ph'><div class='pt'>&#x1F6A8; Vendor Alert System</div><div id='selectedTotal' style='display:flex;align-items:center;gap:8px;padding:6px 14px;border-radius:20px;background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.15);font-size:11.5px;font-weight:700;color:#64748b;font-family:JetBrains Mono,monospace;transition:all 0.3s ease'>Selected Total: 0</div><span class='pb' id='alertBadge'></span></div><div class='pbd0'><div class='tw'><table id='alertTbl'><thead><tr><th>Sel</th><th>Vendor</th><th>Total</th><th>Bills</th><th>Payable</th><th>Max Days</th><th>Bucket</th><th>Credit Days</th><th>Days Left</th><th>Alert</th></tr></thead><tbody></tbody></table></div></div></div><div id='overdue' class='panel' style='margin-bottom:15px'><div class='ph'><div class='pt'>&#x1F534; Overdue Vendors</div><span class='pb' style='color:var(--red)' id='ovBadge'></span></div><div class='pbd' id='ovList' style='display:block;width:100%'></div></div><div id='vendorDetail' style='margin-top:10px;padding:12px;border:1px solid #333;border-radius:8px;color:#fff;font-size:12px;'></div><div class='r2h'><div id='branch' class='panel'><div class='ph'><div class='pt'>&#x1F3EA; Branch Performance (MTD)</div><span class='pb' id='brBadge'></span></div><div class='pbd'><canvas id='brChart' style='max-height:195px'></canvas></div></div><div id='exp' class='panel'><div class='ph'><div class='pt'>&#x1F4B8; Expense Breakdown</div><span class='pb' id='expBadge'></span></div><div class='pbd'><canvas id='expChart' style='max-height:150px;margin-bottom:14px'></canvas><div id='expList'></div></div></div></div><div class='panel' style='margin-bottom:16px'><div class='ph'><div class='pt'>&#x1F5D3; Daily Cash Flow Detail</div><span class='pb'>With Running Balance</span></div><div class='pbd0 tw'><table id='flowTbl'><thead><tr><th>Date</th><th>Cash</th><th>Bank</th><th>Total Inflow</th><th>Cash Exp</th><th>Bank Exp</th><th>Vendor Pay</th><th>Total Outflow</th><th>Net Cash</th><th>Running Bal</th></tr></thead><tbody></tbody></table></div></div><div id='vtable' class='panel' style='margin-bottom:20px'><div class='ph'><div class='pt'>&#x1F3ED; Vendor Outstanding Summary</div><span class='pb' id='vtBadge'></span></div><div class='pbd0 tw'><table id='vendTbl'><thead><tr><th>#</th><th>Vendor Name</th><th>Bills</th><th>Total Amount</th><th>Max Days</th><th>Aging Bucket</th><th>Risk</th></tr></thead><tbody></tbody></table></div></div></div></div><div id='pane-sales' class='tabPane'><div style='padding:22px 26px'><div class='sdateBar'><span class='sdateLbl'>&#x1F4C5; Filter by Date:</span><button class='sdateBtn on' data-sdate='all'>All Dates</button><div id='sdateBtns' style='display:flex;gap:6px;flex-wrap:wrap'></div></div><div class='sSummary'><div class='sCard sCard-cash'><div class='sCard-ico'>&#x1F4B5;</div><div class='sCard-lbl'>Total Cash Sales</div><div class='sCard-val' id='sTotCash' style='color:#10b981'></div><div class='sCard-pct' id='sTotCashPct'></div></div><div class='sCard sCard-card'><div class='sCard-ico'>&#x1F4B3;</div><div class='sCard-lbl'>Total Card Sales</div><div class='sCard-val' id='sTotCard' style='color:#6366f1'></div><div class='sCard-pct' id='sTotCardPct'></div></div><div class='sCard sCard-upi'><div class='sCard-ico'>&#x1F4F1;</div><div class='sCard-lbl'>Total UPI Sales</div><div class='sCard-val' id='sTotUPI' style='color:#3b82f6'></div><div class='sCard-pct' id='sTotUPIPct'></div></div><div class='sCard sCard-total'><div class='sCard-ico'>&#x1F4B0;</div><div class='sCard-lbl'>Grand Total Sales</div><div class='sCard-val' id='sTotAll' style='color:#f59e0b'></div><div class='sCard-pct' id='sTotDeposit'></div></div></div><div class='sBranchGrid' id='sBranchGrid'></div><div class='panel' style='margin-bottom:20px'><div class='ph'><div class='pt'>&#x1F4CB; Sales Detail Table</div><span class='pb' id='sRowCount'></span></div><div class='pbd0 tw'><table id='salesTbl'><thead><tr><th>Date</th><th>Branch</th><th>Cash (&#x20B9;)</th><th>Card (&#x20B9;)</th><th>UPI (&#x20B9;)</th><th>Total (&#x20B9;)</th><th>Deposit</th><th>CN Recd</th><th>CN Issued</th><th>DN Issued</th><th>Remark</th></tr></thead><tbody id='salesTbody'></tbody></table></div></div></div></div></div><script>
+const KPI={totalSalesDay:0,totalExpMTD:0,netBankBal:17008,mtdCashSales:0,cashDeposited:0,mtdTotalSales:0,todayCashColl:0,todayUPICard:0,totalOutstanding:45100408 72};
+const AGING={d0_30:12484564,d31_60:19947654,d61_90:12795787,d90p:-127596 28};
 const BRANCHES=[{"name":"Mahadwar Road","cash":9630,"upi":9630,"card":10639,"total":29899},{"name":"RajaramPuri","cash":12617,"upi":12617,"card":1811,"total":27045},{"name":"Gandhinagar","cash":13122,"upi":13122,"card":7557,"total":33801},{"name":"Ichalkaranji","cash":4634,"upi":4634,"card":4502,"total":13770},{"name":"Hubli","cash":4590,"upi":4590,"card":8550,"total":17730},{"name":"Belgaum","cash":4580,"upi":4580,"card":978,"total":10138}];
 const EXPENSES=[{"type":"Rent","amount":3000},{"type":"Electricity","amount":4000},{"type":"Staff Salary","amount":8500},{"type":"Transport","amount":5300},{"type":"Maintenance","amount":100200}];
-const ALERTS=[{"name":"A-3 CREATION","total":599105,"bills":3,"payable":135198,"maxDays":59,"bucket":"?? 31-60 Days","credit":60,"daysLeft":1,"alert":"?? IMMEDIATE PAYMENT"},{"name":"ARIHANT DISTRIBUTOR","total":24999,"bills":2,"payable":24999,"maxDays":27,"bucket":"?? 0-30 Days","credit":30,"daysLeft":3,"alert":"? PLAN PAYMENT"},{"name":"ARIHANT FASHION","total":3810968,"bills":23,"payable":775616,"maxDays":80,"bucket":"?? 61-90 Days","credit":90,"daysLeft":10,"alert":"?? OK"},{"name":"ARYANVASTRA COLLECTIVE PVT LTD","total":368042,"bills":1,"payable":189226,"maxDays":62,"bucket":"?? 61-90 Days","credit":75,"daysLeft":13,"alert":"?? OK"},{"name":"ASHISH GARMENTS","total":388020,"bills":1,"payable":144021,"maxDays":47,"bucket":"?? 31-60 Days","credit":60,"daysLeft":13,"alert":"?? OK"},{"name":"BHAVAINEE INC.","total":156271,"bills":1,"payable":34642,"maxDays":55,"bucket":"?? 31-60 Days","credit":60,"daysLeft":5,"alert":"? PLAN PAYMENT"},{"name":"BLUOLIVES LIFESTYLE LLP","total":82931,"bills":1,"payable":42233,"maxDays":72,"bucket":"?? 61-90 Days","credit":75,"daysLeft":3,"alert":"? PLAN PAYMENT"},{"name":"DIVYA DARSHAN","total":270743,"bills":1,"payable":83790,"maxDays":64,"bucket":"?? 61-90 Days","credit":75,"daysLeft":11,"alert":"?? OK"},{"name":"FASHION LABS LLP","total":727350,"bills":4,"payable":337380,"maxDays":72,"bucket":"?? 61-90 Days","credit":75,"daysLeft":3,"alert":"? PLAN PAYMENT"},{"name":"FOCUS LIFESTYLE PVT. LTD","total":601060,"bills":4,"payable":112140,"maxDays":64,"bucket":"?? 61-90 Days","credit":75,"daysLeft":11,"alert":"?? OK"},{"name":"GELATO MENS APPARELS PVT.LTD","total":1243028,"bills":6,"payable":432304,"maxDays":58,"bucket":"?? 31-60 Days","credit":60,"daysLeft":2,"alert":"?? IMMEDIATE PAYMENT"},{"name":"HARESHKUMAR BAGS AND FABRICS","total":22852,"bills":1,"payable":4292,"maxDays":30,"bucket":"?? 0-30 Days","credit":30,"daysLeft":0,"alert":"?? OVERDUE"},{"name":"ISHIKA CREATION","total":159583,"bills":1,"payable":950,"maxDays":57,"bucket":"?? 31-60 Days","credit":60,"daysLeft":3,"alert":"? PLAN PAYMENT"},{"name":"JM JAIN LLP","total":1795782.99,"bills":9,"payable":1201611,"maxDays":37,"bucket":"?? 31-60 Days","credit":40,"daysLeft":3,"alert":"? PLAN PAYMENT"},{"name":"JYOTI CORPORATION","total":54502,"bills":2,"payable":3821,"maxDays":61,"bucket":"?? 61-90 Days","credit":75,"daysLeft":14,"alert":"?? OK"},{"name":"K.P. FASHION","total":837473,"bills":1,"payable":385482,"maxDays":63,"bucket":"?? 61-90 Days","credit":75,"daysLeft":12,"alert":"?? OK"},{"name":"LAXMI LACES & FABRICS","total":572435,"bills":2,"payable":103515,"maxDays":59,"bucket":"?? 31-60 Days","credit":60,"daysLeft":1,"alert":"?? IMMEDIATE PAYMENT"},{"name":"LYF LIFESTYLE PVT.LTD.","total":284300,"bills":2,"payable":124053,"maxDays":66,"bucket":"?? 61-90 Days","credit":75,"daysLeft":9,"alert":"?? OK"},{"name":"MAHENDRA GARMENTS","total":304847,"bills":3,"payable":183348,"maxDays":86,"bucket":"?? 61-90 Days","credit":90,"daysLeft":4,"alert":"? PLAN PAYMENT"},{"name":"MEET FASHIONS","total":141055,"bills":1,"payable":141055,"maxDays":59,"bucket":"?? 31-60 Days","credit":60,"daysLeft":1,"alert":"?? IMMEDIATE PAYMENT"},{"name":"MONZARA","total":1946372,"bills":7,"payable":602019,"maxDays":80,"bucket":"?? 61-90 Days","credit":90,"daysLeft":10,"alert":"?? OK"},{"name":"NAMO CLOTHING","total":409155,"bills":4,"payable":41202,"maxDays":59,"bucket":"?? 31-60 Days","credit":60,"daysLeft":1,"alert":"?? IMMEDIATE PAYMENT"},{"name":"PARIDHAN APPARELS","total":1000530,"bills":10,"payable":980488,"maxDays":66,"bucket":"?? 61-90 Days","credit":75,"daysLeft":9,"alert":"?? OK"},{"name":"PARSHVA CREATION","total":727275,"bills":3,"payable":201611,"maxDays":63,"bucket":"?? 61-90 Days","credit":75,"daysLeft":12,"alert":"?? OK"},{"name":"PMS CREATIONS","total":1102813.75,"bills":2,"payable":223094,"maxDays":63,"bucket":"?? 61-90 Days","credit":75,"daysLeft":12,"alert":"?? OK"},{"name":"POINT CREATION","total":1043185,"bills":2,"payable":42032,"maxDays":75,"bucket":"?? 61-90 Days","credit":75,"daysLeft":0,"alert":"?? OVERDUE"},{"name":"PREKSHA CREATIONS","total":4464,"bills":2,"payable":4464,"maxDays":27,"bucket":"?? 0-30 Days","credit":30,"daysLeft":3,"alert":"? PLAN PAYMENT"},{"name":"R.D. DISTRIBUTORS","total":5361536,"bills":33,"payable":712466,"maxDays":85,"bucket":"?? 61-90 Days","credit":90,"daysLeft":5,"alert":"? PLAN PAYMENT"},{"name":"R.S. DISTRIBUTORS","total":5598284,"bills":14,"payable":338304,"maxDays":79,"bucket":"?? 61-90 Days","credit":90,"daysLeft":11,"alert":"?? OK"},{"name":"S.K. SARASWATI GARMENTS","total":757638,"bills":2,"payable":255444,"maxDays":66,"bucket":"?? 61-90 Days","credit":75,"daysLeft":9,"alert":"?? OK"},{"name":"S.M.E TRADELINKS","total":2375112,"bills":1,"payable":358520,"maxDays":77,"bucket":"?? 61-90 Days","credit":90,"daysLeft":13,"alert":"?? OK"},{"name":"SALT CLOTHING CO","total":356138,"bills":2,"payable":0,"maxDays":59,"bucket":"?? 31-60 Days","credit":60,"daysLeft":1,"alert":"?? IMMEDIATE PAYMENT"}];
-const OVERDUE=[{"name":"A-3 CREATION","total":599105,"payable":56936,"maxDays":65,"bucket":"?? 61-90 Days","credit":60,"daysLeft":-5,"alert":"?? OVERDUE"},{"name":"ASHISH GARMENTS","total":388020,"payable":103201,"maxDays":85,"bucket":"?? 61-90 Days","credit":60,"daysLeft":-25,"alert":"?? OVERDUE"},{"name":"BHAVAINEE INC.","total":156271,"payable":98350,"maxDays":75,"bucket":"?? 61-90 Days","credit":60,"daysLeft":-15,"alert":"?? OVERDUE"},{"name":"CHAMUNDA  APPAREL","total":1965866,"payable":231249,"maxDays":76,"bucket":"?? 61-90 Days","credit":75,"daysLeft":-1,"alert":"?? OVERDUE"},{"name":"FASHION LABS LLP","total":727350,"payable":390915,"maxDays":87,"bucket":"?? 61-90 Days","credit":75,"daysLeft":-12,"alert":"?? OVERDUE"},{"name":"FOCUS LIFESTYLE PVT. LTD","total":601060,"payable":209501,"maxDays":80,"bucket":"?? 61-90 Days","credit":75,"daysLeft":-5,"alert":"?? OVERDUE"},{"name":"FUNKY APPAREL","total":664282.99,"payable":-48451.01,"maxDays":1871,"bucket":"?? 90+ Days","credit":75,"daysLeft":-1796,"alert":"?? OVERDUE"},{"name":"GIRIWAR FASHION INDUSTRIES","total":85286,"payable":17850,"maxDays":62,"bucket":"?? 61-90 Days","credit":45,"daysLeft":-17,"alert":"?? OVERDUE"},{"name":"HARESHKUMAR BAGS AND FABRICS","total":22852,"payable":11600,"maxDays":31,"bucket":"?? 31-60 Days","credit":30,"daysLeft":-1,"alert":"?? OVERDUE"},{"name":"JM JAIN LLP","total":1795782.99,"payable":575600.99,"maxDays":921,"bucket":"?? 90+ Days","credit":40,"daysLeft":-881,"alert":"?? OVERDUE"},{"name":"MAURYA ETHNIC WEAR","total":81477,"payable":24090,"maxDays":80,"bucket":"?? 61-90 Days","credit":75,"daysLeft":-5,"alert":"?? OVERDUE"},{"name":"NAMO CLOTHING","total":409155,"payable":17971,"maxDays":61,"bucket":"?? 61-90 Days","credit":60,"daysLeft":-1,"alert":"?? OVERDUE"},{"name":"PMS CREATIONS","total":1102813.75,"payable":810643.75,"maxDays":339,"bucket":"?? 90+ Days","credit":75,"daysLeft":-264,"alert":"?? OVERDUE"},{"name":"POINT CREATION","total":1043185,"payable":468758,"maxDays":315,"bucket":"?? 90+ Days","credit":75,"daysLeft":-240,"alert":"?? OVERDUE"},{"name":"SHALIMAR ENTERPRISES","total":89605,"payable":52089,"maxDays":62,"bucket":"?? 61-90 Days","credit":60,"daysLeft":-2,"alert":"?? OVERDUE"}];
+const ALERTS=[{"name":"No Data","total":0,"bills":0,"payable":0,"maxDays":0,"bucket":"","credit":0,"daysLeft":0,"alert":"-"}];
+const OVERDUE=[{"name":"No Data","total":0,"maxDays":0,"bucket":"","daysLeft":0,"alert":"-"}];
 const CASHFLOW=[{"dt":"01-04-2026","cash":18389,"bank":22805,"inflow":41194,"cashExp":500,"bankExp":0,"vendPay":0,"outflow":500,"net":40694,"runBal":40694},{"dt":"02-04-2026","cash":11697,"bank":1607,"inflow":13304,"cashExp":0,"bankExp":200,"vendPay":0,"outflow":200,"net":13104,"runBal":53798},{"dt":"03-04-2026","cash":30000,"bank":58798,"inflow":88798,"cashExp":0,"bankExp":0,"vendPay":0,"outflow":0,"net":88798,"runBal":142596},{"dt":"24-04-2026","cash":0,"bank":0,"inflow":0,"cashExp":0,"bankExp":120300,"vendPay":0,"outflow":120300,"net":-120300,"runBal":22296}];
 const VENDORS=[{"name":"No Data","bills":0,"amount":0,"maxDays":0,"bucket":"-"}];
+const SALESDATA=[{"dt":"01-04-2026","branch":"Mahadwar Road","cash":4000,"card":4578,"upi":8787,"total":17365,"deposit":50000,"cnRecd":4500,"cnIssued":4580,"dnIssued":4570,"remark":""},{"dt":"01-04-2026","branch":"RajaramPuri","cash":5000,"card":4578,"upi":4,"total":9582,"deposit":0,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"01-04-2026","branch":"Gandhinagar","cash":4805,"card":4747,"upi":55,"total":9607,"deposit":0,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"01-04-2026","branch":"Ichalkaranji","cash":4584,"card":54,"upi":2,"total":4640,"deposit":2000,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"02-04-2026","branch":"Mahadwar Road","cash":2540,"card":552,"upi":52,"total":3144,"deposit":0,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"02-04-2026","branch":"RajaramPuri","cash":2575,"card":451,"upi":25,"total":3051,"deposit":0,"cnRecd":4500,"cnIssued":4580,"dnIssued":4570,"remark":""},{"dt":"02-04-2026","branch":"Gandhinagar","cash":6582,"card":525,"upi":2,"total":7109,"deposit":5800,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"03-04-2026","branch":"Mahadwar Road","cash":5000,"card":4500,"upi":1800,"total":11300,"deposit":0,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"03-04-2026","branch":"RajaramPuri","cash":5000,"card":7588,"upi":1782,"total":14370,"deposit":5000,"cnRecd":4500,"cnIssued":4580,"dnIssued":4570,"remark":""},{"dt":"03-04-2026","branch":"Ichalkaranji","cash":5000,"card":4580,"upi":4500,"total":14080,"deposit":4508,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"03-04-2026","branch":"Gandhinagar","cash":5000,"card":7850,"upi":7500,"total":20350,"deposit":7800,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"03-04-2026","branch":"Hubli","cash":5000,"card":4590,"upi":8550,"total":18140,"deposit":4200,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""},{"dt":"03-04-2026","branch":"Belgaum","cash":5000,"card":4580,"upi":978,"total":10558,"deposit":8200,"cnRecd":0,"cnIssued":0,"dnIssued":0,"remark":""}];
 const R=s=>(s<0?'-':'') + Math.abs(s).toLocaleString('en-IN');
 const RL=n=>(n<0?'-':'') + Math.abs(n).toLocaleString('en-IN');
 const now=new Date();
@@ -46,60 +47,60 @@ ALERTS.forEach(v=>{
   const rc=v.daysLeft<=0?'tr-r':v.daysLeft<=3?'tr-o':'';
   const bc=v.bucket.includes('90')?'cr':v.bucket.includes('61')?'co':v.bucket.includes('31')?'cy':'cg';
   const ac=v.alert.includes('OVERDUE')?'cr':v.alert.includes('IMMEDIATE')?'co':v.alert.includes('PLAN')?'cy':'cg';
- const dl = v.daysLeft<=0 ? `<span class='chip cr'>OVERDUE</span>` :
- v.daysLeft<=1 ? `<span class='chip cr'>${v.daysLeft}d</span>` :
- v.daysLeft<=3 ? `<span class='chip co'>${v.daysLeft}d</span>` :
- `<span class='chip cg'>${v.daysLeft}d</span>`;
- const bTxt = (v.bucket || '').replace(/\?/g,'').trim();
- const aTxt = (v.alert || '').replace(/\?/g,'').trim();
+  const dl=v.daysLeft<=0?`<span class='chip cr'>OVERDUE</span>`:
+    v.daysLeft<=1?`<span class='chip cr'>${v.daysLeft}d</span>`:
+    v.daysLeft<=3?`<span class='chip co'>${v.daysLeft}d</span>`:
+    `<span class='chip cg'>${v.daysLeft}d</span>`;
+  const bTxt=(v.bucket||'').replace(/\?/g,'').trim();
+  const aTxt=(v.alert||'').replace(/\?/g,'').trim();
   aTb.innerHTML+=`<tr class='${rc}'>
-<td style='text-align:center'><input type='checkbox' class='rowCheck' data-amt='${v.payable}'></td>
-  <td style='font-weight:700'>${v.name}</td>
-  <td class='mono'>${RL(v.total)}</td>
-  <td class='mono'>${v.bills}</td>
-  <td class='mono'>${RL(v.payable)}</td>
-  <td class='mono'>${v.maxDays}d</td>
-  <td><span class='chip ${bc}'>${v.bucket.includes('61') ? '\u{1F534} ' : v.bucket.includes('31') ? '\u{1F7E1} ' : '\u{1F7E2} '}${bTxt}</span></td>
-  <td class='mono'>${v.credit}d</td>
-  <td>${dl}</td>
-  <td><span class='chip ${ac}'>${aTxt.includes('IMMEDIATE') ? '\u{1F6A8} ' : aTxt.includes('PLAN') ? '\u26A0\uFE0F ' : '\u2705 '}${aTxt}</span></td>
+    <td style='text-align:center'><input type='checkbox' class='rowCheck' data-amt='${v.payable}'></td>
+    <td style='font-weight:700'>${v.name}</td>
+    <td class='mono'>${RL(v.total)}</td>
+    <td class='mono'>${v.bills}</td>
+    <td class='mono'>${RL(v.payable)}</td>
+    <td class='mono'>${v.maxDays}d</td>
+    <td><span class='chip ${bc}'>${v.bucket.includes('61')?'\u{1F534} ':v.bucket.includes('31')?'\u{1F7E1} ':'\u{1F7E2} '}${bTxt}</span></td>
+    <td class='mono'>${v.credit}d</td>
+    <td>${dl}</td>
+    <td><span class='chip ${ac}'>${aTxt.includes('IMMEDIATE')?'\u{1F6A8} ':aTxt.includes('PLAN')?'\u26A0\uFE0F ':'\u2705 '}${aTxt}</span></td>
   </tr>`;
 });
-document.addEventListener('change', function(e){
- if(!e.target.classList.contains('rowCheck')) return;
- const row = e.target.closest('tr');
- if(e.target.checked){row.classList.add('row-selected');}
- else{row.classList.remove('row-selected');}
- let total = 0; let count = 0;
- document.querySelectorAll('.rowCheck:checked').forEach(cb=>{
-   total += parseFloat(cb.getAttribute('data-amt')) || 0; count++;
- });
- const el = document.getElementById('selectedTotal');
- if(count > 0){
-   el.innerHTML = `<span style='width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);display:inline-flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0'>\u2714</span>`
-   + `<span style='color:#94a3b8'>${count} vendor${count>1?'s':''} selected</span>`
-   + `<span style='width:1px;height:14px;background:#1e2d45;display:inline-block'></span>`
-   + `<span style='color:#10b981;font-size:13px'>\u20B9${total.toLocaleString('en-IN')}</span>`;
-   el.style.background='rgba(16,185,129,0.1)';
-   el.style.borderColor='rgba(16,185,129,0.35)';
-   el.style.color='#10b981';
-   el.style.boxShadow='0 0 14px rgba(16,185,129,0.15)';
- } else {
-   el.innerHTML = 'Selected Total: 0';
-   el.style.background='rgba(16,185,129,0.07)';
-   el.style.borderColor='rgba(16,185,129,0.15)';
-   el.style.color='#64748b';
-   el.style.boxShadow='none';
- }
+document.addEventListener('change',function(e){
+  if(!e.target.classList.contains('rowCheck')) return;
+  const row=e.target.closest('tr');
+  if(e.target.checked){row.classList.add('row-selected');}
+  else{row.classList.remove('row-selected');}
+  let total=0; let count=0;
+  document.querySelectorAll('.rowCheck:checked').forEach(cb=>{
+    total+=parseFloat(cb.getAttribute('data-amt'))||0; count++;
+  });
+  const el=document.getElementById('selectedTotal');
+  if(count>0){
+    el.innerHTML=`<span style='width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);display:inline-flex;align-items:center;justify-content:center;font-size:10px;color:#fff;flex-shrink:0'>\u2714</span>`
+    +`<span style='color:#94a3b8'>${count} vendor${count>1?'s':''} selected</span>`
+    +`<span style='width:1px;height:14px;background:#1e2d45;display:inline-block'></span>`
+    +`<span style='color:#10b981;font-size:13px'>\u20B9${total.toLocaleString('en-IN')}</span>`;
+    el.style.background='rgba(16,185,129,0.1)';
+    el.style.borderColor='rgba(16,185,129,0.35)';
+    el.style.color='#10b981';
+    el.style.boxShadow='0 0 14px rgba(16,185,129,0.15)';
+  } else {
+    el.innerHTML='Selected Total: 0';
+    el.style.background='rgba(16,185,129,0.07)';
+    el.style.borderColor='rgba(16,185,129,0.15)';
+    el.style.color='#64748b';
+    el.style.boxShadow='none';
+  }
 });
-document.addEventListener('click', function(e){
- const row = e.target.closest('#alertTbl tbody tr');
- if(!row) return;
- if(e.target.classList.contains('rowCheck')) return;
- const cb = row.querySelector('.rowCheck');
- if(!cb) return;
- cb.checked = !cb.checked;
- cb.dispatchEvent(new Event('change', {bubbles:true}));
+document.addEventListener('click',function(e){
+  const row=e.target.closest('#alertTbl tbody tr');
+  if(!row) return;
+  if(e.target.classList.contains('rowCheck')) return;
+  const cb=row.querySelector('.rowCheck');
+  if(!cb) return;
+  cb.checked=!cb.checked;
+  cb.dispatchEvent(new Event('change',{bubbles:true}));
 });
 document.getElementById('ovBadge').textContent=OVERDUE.length+' Critical';
 const ovEl=document.getElementById('ovList');
@@ -171,7 +172,7 @@ new Chart(document.getElementById('cfChart'),{
     scales:{
       x:{grid:{color:'rgba(26,37,64,.6)'},ticks:{font:{size:9}}},
       y:{grid:{color:'rgba(26,37,64,.6)'},ticks:{font:{size:9},
-        callback:v=> (v ? Number(v).toLocaleString('en-IN') : '0')}}}}
+        callback:v=>(v?Number(v).toLocaleString('en-IN'):'0')}}}}
 });
 new Chart(document.getElementById('agDonut'),{
   type:'doughnut',
@@ -213,32 +214,29 @@ setTimeout(()=>{
   document.querySelectorAll('.ab[data-w]').forEach(el=>{el.style.width=el.dataset.w+'%'});
 },350);
 document.addEventListener('click',function(e){
-var box=e.target.closest('.abox');if(!box)return;
-var name=box.querySelector('.av').innerText.trim();
-var v=OVERDUE.find(x=>x.name===name);if(!v)return;
-var old=box.nextElementSibling;
-if(old && old.classList.contains('detailBox')){old.remove();return;}
-var d=document.createElement('div');
-d.className='detailBox';
-d.style.padding='8px';
-d.style.margin='5px 0 10px';
-d.style.border='1px solid #333';
-d.style.borderRadius='6px';
-d.innerHTML=`
-<div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:6px'>
-<div style='font-weight:700;font-size:13px;color:#fff'>${v.name}</div>
-<div style='font-size:15px;font-weight:800;color:${v.daysLeft<=1?'#ef4444':v.daysLeft<=3?'#f97316':'#10b981'}'>${v.maxDays}d</div>
-</div>
-<div style='display:grid;grid-template-columns:repeat(2,1fr);gap:6px;font-size:11px'>
-<div style='background:#111827;padding:6px;border-radius:6px'>Total<br><b>${v.total.toLocaleString('en-IN')}</b></div>
-<div style='background:#111827;padding:6px;border-radius:6px'>Payable<br><b style='color:#10b981'>${v.payable.toLocaleString('en-IN')}</b></div>
-<div style='background:#111827;padding:6px;border-radius:6px'>Max Days<br><b>${v.maxDays}</b></div>
-<div style='background:#111827;padding:6px;border-radius:6px'>Days Over<br><b>${Math.abs(v.daysLeft)}</b></div>
-<div style='background:#111827;padding:6px;border-radius:6px'>Credit Days<br><b>${v.credit}</b></div>
-<div style='background:#1f2937;padding:6px;border-radius:6px'>Bucket<br><b>${v.bucket.replace(/\?/g,'')}</b></div>
-<div style='background:${v.alert.includes('OVERDUE')?'#7f1d1d':'#1f2937'};padding:6px;border-radius:6px;color:#fff'>Alert<br><b>${v.alert.replace(/\?/g,'')}</b></div>
-</div>`;
-box.insertAdjacentElement('afterend',d);
+  var box=e.target.closest('.abox');if(!box)return;
+  var name=box.querySelector('.av').innerText.trim();
+  var v=OVERDUE.find(x=>x.name===name);if(!v)return;
+  var old=box.nextElementSibling;
+  if(old && old.classList.contains('detailBox')){old.remove();return;}
+  var d=document.createElement('div');
+  d.className='detailBox';
+  d.style.cssText='padding:8px;margin:5px 0 10px;border:1px solid #333;border-radius:6px';
+  d.innerHTML=`
+    <div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:6px'>
+      <div style='font-weight:700;font-size:13px;color:#fff'>${v.name}</div>
+      <div style='font-size:15px;font-weight:800;color:${v.daysLeft<=1?'#ef4444':v.daysLeft<=3?'#f97316':'#10b981'}'>${v.maxDays}d</div>
+    </div>
+    <div style='display:grid;grid-template-columns:repeat(2,1fr);gap:6px;font-size:11px'>
+      <div style='background:#111827;padding:6px;border-radius:6px'>Total<br><b>${v.total.toLocaleString('en-IN')}</b></div>
+      <div style='background:#111827;padding:6px;border-radius:6px'>Payable<br><b style='color:#10b981'>${v.payable.toLocaleString('en-IN')}</b></div>
+      <div style='background:#111827;padding:6px;border-radius:6px'>Max Days<br><b>${v.maxDays}</b></div>
+      <div style='background:#111827;padding:6px;border-radius:6px'>Days Over<br><b>${Math.abs(v.daysLeft)}</b></div>
+      <div style='background:#111827;padding:6px;border-radius:6px'>Credit Days<br><b>${v.credit}</b></div>
+      <div style='background:#1f2937;padding:6px;border-radius:6px'>Bucket<br><b>${v.bucket.replace(/\?/g,'')}</b></div>
+      <div style='background:${v.alert.includes('OVERDUE')?'#7f1d1d':'#1f2937'};padding:6px;border-radius:6px;color:#fff'>Alert<br><b>${v.alert.replace(/\?/g,'')}</b></div>
+    </div>`;
+  box.insertAdjacentElement('afterend',d);
 });
 const btn=document.getElementById('toggleBtn');
 const reBtn=document.getElementById('reopenBtn');
@@ -259,4 +257,160 @@ if(btn){btn.addEventListener('click',function(){
   else{closeSidebar();}
 });}
 if(reBtn){reBtn.addEventListener('click',openSidebar);}
+document.querySelectorAll('.tabBtn').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.tabBtn').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+    const t=this.dataset.tab;
+    document.getElementById('pane-main').classList.toggle('active',t==='main');
+    document.getElementById('pane-sales').classList.toggle('active',t==='sales');
+    if(t==='sales') renderSales('all');
+  });
+});
+const BR_SHORT={'Mahadwar Road':'MROAD','RajaramPuri':"R'PURI",'Ichalkaranji':'ICH','Gandhinagar':'GNR','Hubli':'HUB','Belgaum':'BGM'};
+let salesRendered=false;
+function renderSales(filterDate){
+  if(!SALESDATA||SALESDATA.length===0){
+    document.getElementById('sBranchGrid').innerHTML="<div class='sNoData'>\u274C No Sales Data Found in 'Sales Data' sheet</div>";
+    return;
+  }
+  if(!salesRendered){
+    salesRendered=true;
+    const dates=[...new Set(SALESDATA.map(r=>r.dt))];
+    const dBar=document.getElementById('sdateBtns');
+    dates.forEach(dt=>{
+      const b=document.createElement('button');
+      b.className='sdateBtn'; b.textContent=dt; b.dataset.sdate=dt;
+      b.addEventListener('click',function(){
+        document.querySelectorAll('.sdateBtn').forEach(x=>x.classList.remove('on'));
+        this.classList.add('on');
+        renderSales(this.dataset.sdate);
+      });
+      dBar.appendChild(b);
+    });
+    document.querySelector('[data-sdate=all]').addEventListener('click',function(){
+      document.querySelectorAll('.sdateBtn').forEach(x=>x.classList.remove('on'));
+      this.classList.add('on');
+      renderSales('all');
+    });
+  }
+  const rows=filterDate==='all'?SALESDATA:SALESDATA.filter(r=>r.dt===filterDate);
+  const totCash=rows.reduce((s,r)=>s+r.cash,0);
+  const totCard=rows.reduce((s,r)=>s+r.card,0);
+  const totUPI=rows.reduce((s,r)=>s+r.upi,0);
+  const totAll=rows.reduce((s,r)=>s+r.total,0);
+  const totDep=rows.reduce((s,r)=>s+r.deposit,0);
+  document.getElementById('sTotCash').textContent=RL(totCash);
+  document.getElementById('sTotCard').textContent=RL(totCard);
+  document.getElementById('sTotUPI').textContent=RL(totUPI);
+  document.getElementById('sTotAll').textContent=RL(totAll);
+  document.getElementById('sTotCashPct').textContent=totAll>0?(totCash/totAll*100).toFixed(1)+'% of total':'-';
+  document.getElementById('sTotCardPct').textContent=totAll>0?(totCard/totAll*100).toFixed(1)+'% of total':'-';
+  document.getElementById('sTotUPIPct').textContent=totAll>0?(totUPI/totAll*100).toFixed(1)+'% of total':'-';
+  document.getElementById('sTotDeposit').textContent='\uD83C\uDFE6 Deposited: '+RL(totDep);
+  const bg=document.getElementById('sBranchGrid');
+  bg.innerHTML='';
+  const allBranches=[...new Set(SALESDATA.map(r=>r.branch))];
+  allBranches.forEach(br=>{
+    const brRows=rows.filter(r=>r.branch===br);
+    const bCash=brRows.reduce((s,r)=>s+r.cash,0);
+    const bCard=brRows.reduce((s,r)=>s+r.card,0);
+    const bUPI=brRows.reduce((s,r)=>s+r.upi,0);
+    const bTot=brRows.reduce((s,r)=>s+r.total,0);
+    const bDep=brRows.reduce((s,r)=>s+r.deposit,0);
+    const bCN=brRows.reduce((s,r)=>s+r.cnRecd,0);
+    const short=BR_SHORT[br]||br.substring(0,6).toUpperCase();
+    const pCash=bTot>0?(bCash/bTot*100).toFixed(1):0;
+    const pCard=bTot>0?(bCard/bTot*100).toFixed(1):0;
+    const pUPI=bTot>0?(bUPI/bTot*100).toFixed(1):0;
+    const pDep=bTot>0?Math.min(100,(bDep/bTot*100)).toFixed(0):0;
+    bg.innerHTML+=`
+    <div class='sBrCard'>
+      <div class='sBrName'>
+        <span style='font-size:12px;color:var(--text)'>${short}</span>
+        <span class='sBrTotal'>${RL(bTot)}</span>
+      </div>
+      <div class='sBrRow'>
+        <span class='sBrRowLbl'>\uD83D\uDCB5 Cash</span>
+        <span><b class='sBrRowVal' style='color:#10b981'>${RL(bCash)}</b> <span class='sBrRowPct'>${pCash}%</span></span>
+      </div>
+      <div class='sBrRow'>
+        <span class='sBrRowLbl'>\uD83D\uDCB3 Card</span>
+        <span><b class='sBrRowVal' style='color:#6366f1'>${RL(bCard)}</b> <span class='sBrRowPct'>${pCard}%</span></span>
+      </div>
+      <div class='sBrRow'>
+        <span class='sBrRowLbl'>\uD83D\uDCF1 UPI</span>
+        <span><b class='sBrRowVal' style='color:#3b82f6'>${RL(bUPI)}</b> <span class='sBrRowPct'>${pUPI}%</span></span>
+      </div>
+      <div class='sBrRow'>
+        <span class='sBrRowLbl'>\uD83C\uDFE6 Deposited</span>
+        <span><b class='sBrRowVal' style='color:#f59e0b'>${RL(bDep)}</b></span>
+      </div>
+      <div class='sBrRow'>
+        <span class='sBrRowLbl'>\uD83E\uDDFE CN Recd</span>
+        <span><b class='sBrRowVal' style='color:#f97316'>${bCN>0?RL(bCN):'-'}</b></span>
+      </div>
+      <div class='sBrPbar'><div class='sBrPbarFill' style='width:${pDep}%'></div></div>
+    </div>`;
+  });
+  document.getElementById('sRowCount').textContent=rows.length+' Records';
+  const sTb=document.getElementById('salesTbody');
+  sTb.innerHTML='';
+  const dateGroups={};
+  rows.forEach(r=>{if(!dateGroups[r.dt])dateGroups[r.dt]=[];dateGroups[r.dt].push(r);});
+  Object.keys(dateGroups).forEach(dt=>{
+    const grp=dateGroups[dt];
+    grp.forEach(r=>{
+      const tot=r.total;
+      const pC=tot>0?(r.cash/tot*100).toFixed(0):0;
+      const pCd=tot>0?(r.card/tot*100).toFixed(0):0;
+      const pU=tot>0?(r.upi/tot*100).toFixed(0):0;
+      sTb.innerHTML+=`<tr>
+        <td class='mono' style='font-weight:700;color:var(--accent)'>${r.dt}</td>
+        <td style='font-weight:600'>${r.branch}</td>
+        <td class='mono' style='color:#10b981'>${RL(r.cash)}<br><span style='font-size:8px;color:#64748b'>${pC}%</span></td>
+        <td class='mono' style='color:#6366f1'>${RL(r.card)}<br><span style='font-size:8px;color:#64748b'>${pCd}%</span></td>
+        <td class='mono' style='color:#3b82f6'>${RL(r.upi)}<br><span style='font-size:8px;color:#64748b'>${pU}%</span></td>
+        <td class='mono' style='font-weight:800;color:#f59e0b'>${RL(r.total)}</td>
+        <td class='mono'>${r.deposit>0?RL(r.deposit):'-'}</td>
+        <td class='mono'>${r.cnRecd>0?RL(r.cnRecd):'-'}</td>
+        <td class='mono'>${r.cnIssued>0?RL(r.cnIssued):'-'}</td>
+        <td class='mono'>${r.dnIssued>0?RL(r.dnIssued):'-'}</td>
+        <td style='font-size:10px;color:#94a3b8'>${r.remark||'-'}</td>
+      </tr>`;
+    });
+    if(grp.length>1){
+      const sc=grp.reduce((s,r)=>s+r.cash,0);
+      const scd=grp.reduce((s,r)=>s+r.card,0);
+      const su=grp.reduce((s,r)=>s+r.upi,0);
+      const st=grp.reduce((s,r)=>s+r.total,0);
+      const sd=grp.reduce((s,r)=>s+r.deposit,0);
+      sTb.innerHTML+=`<tr class='sTotRow'>
+        <td class='mono' style='color:#64748b;font-size:9px'>TOTAL</td>
+        <td style='color:#64748b;font-size:9px'>${dt}</td>
+        <td class='mono' style='color:#10b981;font-weight:800'>${RL(sc)}</td>
+        <td class='mono' style='color:#6366f1;font-weight:800'>${RL(scd)}</td>
+        <td class='mono' style='color:#3b82f6;font-weight:800'>${RL(su)}</td>
+        <td class='mono' style='color:#f59e0b;font-weight:800'>${RL(st)}</td>
+        <td class='mono'>${sd>0?RL(sd):'-'}</td>
+        <td colspan='4' style='color:#64748b;font-size:9px'>${grp.length} branches</td>
+      </tr>`;
+    }
+  });
+}
+document.querySelectorAll('.tabBtn').forEach(btn=>{
+btn.addEventListener('click',function(){
+document.querySelectorAll('.tabBtn').forEach(b=>{
+b.classList.remove('active');
+});
+document.querySelectorAll('.tabPane').forEach(p=>{
+p.classList.remove('active');
+});
+this.classList.add('active');
+const t=this.dataset.tab;
+const pane=document.getElementById('pane-'+t);
+if(pane){pane.classList.add('active');}
+if(t==='sales'){renderSales('all');}
+});
+});
 </script></body></html>

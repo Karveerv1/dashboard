@@ -113,7 +113,7 @@ OVERDUE.forEach(v=>{
     <div class='ady ${crit?'c':'w'}'>${v.maxDays}d</div>
   </div>`;
 });
-document.getElementById('cfBadge').textContent=CASHFLOW.length+' Days';
+document.getElementById('cfBadge').textContent='Last 30 of '+CASHFLOW.length+' Days';
 const fTb=document.querySelector('#flowTbl tbody');
 CASHFLOW.forEach(d=>{
   const nc=d.net>=0?'pos':'neg';
@@ -157,13 +157,14 @@ EXPENSES.forEach(e=>{if(e.amount>0)
 Chart.defaults.color='#64748b';
 Chart.defaults.font.family="'JetBrains Mono'";
 Chart.defaults.font.size=10;
+const cf30=CASHFLOW.slice(-30);
 new Chart(document.getElementById('cfChart'),{
   type:'line',
-  data:{labels:CASHFLOW.map(d=>d.dt),datasets:[
-    {label:'Inflow',data:CASHFLOW.map(d=>d.inflow/1000),
+  data:{labels:cf30.map(d=>d.dt),datasets:[
+    {label:'Inflow',data:cf30.map(d=>d.inflow/1000),
      borderColor:'#10b981',backgroundColor:'rgba(16,185,129,.07)',
      fill:true,tension:.4,pointRadius:4,pointBackgroundColor:'#10b981',borderWidth:2},
-    {label:'Outflow',data:CASHFLOW.map(d=>d.outflow/1000),
+    {label:'Outflow',data:cf30.map(d=>d.outflow/1000),
      borderColor:'#ef4444',backgroundColor:'rgba(239,68,68,.06)',
      fill:true,tension:.4,pointRadius:4,pointBackgroundColor:'#ef4444',borderWidth:2}]},
   options:{responsive:true,maintainAspectRatio:true,
